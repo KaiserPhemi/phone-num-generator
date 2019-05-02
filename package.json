@@ -1,0 +1,23 @@
+{
+  "name": "phone-num-generator",
+  "version": "1.0.0",
+  "description": "a random phone number generator",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon serc/index.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaiserPhemi/phone-num-generator.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "oluwafemi akinwa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KaiserPhemi/phone-num-generator/issues"
+  },
+  "homepage": "https://github.com/KaiserPhemi/phone-num-generator#readme"
+}
