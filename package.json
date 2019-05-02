@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/KaiserPhemi/phone-num-generator/issues"
   },
-  "homepage": "https://github.com/KaiserPhemi/phone-num-generator#readme"
+  "homepage": "https://github.com/KaiserPhemi/phone-num-generator#readme",
+  "devDependencies": {
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
+  }
 }
