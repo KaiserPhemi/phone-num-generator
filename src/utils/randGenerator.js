@@ -17,12 +17,8 @@ const createNumberSet = setLength => {
     return "Array length must start from 1";
   } else {
     for (let i = 1; i <= setLength; i++) {
-      const phoneNum = "0" + generatePhoneNumber();
-      if (phoneNum.length !== 10) {
-        continue;
-      } else {
-        phoneNumbers.add(phoneNum);
-      }
+      const phoneNum = generatePhoneNumber();
+      phoneNumbers.add(phoneNum);
     }
     return phoneNumbers;
   }
