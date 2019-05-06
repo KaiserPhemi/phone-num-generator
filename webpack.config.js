@@ -28,11 +28,12 @@ module.exports = {
   ],
   module: {
     rules: [
+      { test: /\.jsx?$/, loader: "babel-loader" },
+      { enforce: "pre", test: /\.js$/, loader: "source-map-loader" },
       {
         test: /\.scss$/,
         loader: ["style-loader", "css-loader", "sass-loader"]
-      },
-      { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
+      }
     ]
   }
 };
