@@ -1,11 +1,15 @@
-// using set to avoid duplicates
-let phoneNumbers = new Set();
-
 /**
  * @desc generates random number
  */
 const generatePhoneNumber = () => {
-  return Math.floor(100000000 + Math.random() * 900000000);
+  const PHONE_NUM_DIGITS = 9;
+  const ADDED_DIGIT = 1;
+  const maxDigit = Math.pow(10, PHONE_NUM_DIGITS + ADDED_DIGIT);
+  const minDigit = Math.pow(10, PHONE_NUM_DIGITS);
+  const phoneNumber =
+    Math.floor(Math.random() * (maxDigit - minDigit + 1)) + minDigit;
+
+  return Number(("" + phoneNumber).substring(ADDED_DIGIT));
 };
 
 /**
@@ -13,15 +17,21 @@ const generatePhoneNumber = () => {
  * @param {number} setLength
  */
 const createNumberSet = setLength => {
+  let phoneNumbers = new Set();
   if (typeof setLength !== "number" || !setLength || setLength <= 0) {
     return "Array length must start from 1";
   } else {
     for (let i = 1; i <= setLength; i++) {
       const phoneNum = generatePhoneNumber();
-      phoneNumbers.add(phoneNum);
+      if (("" + phoneNum).length === 9) {
+        phoneNumbers.add(phoneNum);
+      } else {
+        console.log("missed", phoneNum);
+        continue;
+      }
     }
     return phoneNumbers;
   }
 };
 
-module.exports = createNumberSet;
+export default createNumberSet;

@@ -1,7 +1,30 @@
 $main_blue: #2654b8;
 
-body {
+html,
+body,
+div,
+span,
+object,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Nunito", sans-serif;
   padding: 0;
   margin: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+.app_wrapper {
+  width: 50rem;
+  header > p {
+    font-size: 2rem;
+    margin: 2rem auto;
+  }
 }
