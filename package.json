@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "a random phone number generator",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open",
-    "test": "jest --coverage | coveralls && rm -rf ./coverage",
-    "just": "jest"
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open --hot",
+    "test": "jest --colors --coverage --coverageReporters=text-lcov | coveralls && rm -rf ./coverage"
   },
   "repository": {
     "type": "git",
@@ -22,12 +22,13 @@
   "homepage": "https://github.com/KaiserPhemi/phone-num-generator#readme",
   "devDependencies": {
     "@babel/core": "^7.4.4",
-    "@babel/plugin-proposal-class-properties": "^7.4.4",
-    "@babel/plugin-syntax-class-properties": "^7.2.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.4.4",
     "babel-jest": "^24.8.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "chai": "^4.2.0",
     "coveralls": "^3.0.3",
     "enzyme": "^3.9.0",

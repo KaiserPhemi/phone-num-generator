@@ -1,7 +1,6 @@
 module.exports = {
   clearMocks: true,
   coverageDirectory: "coverage",
-  coverageReporters: ["json", "lcov", "text", "clover"],
   moduleDirectories: ["node_modules"],
   moduleFileExtensions: ["js", "json", "jsx"],
   moduleNameMapper: {
@@ -10,7 +9,7 @@ module.exports = {
   },
   setupFilesAfterEnv: ["<rootDir>/enzymeSetup.js"],
   transform: {
-    "^.+\\.js?$": "babel-jest",
+    "^.+\\.jsx?$": "babel-jest",
     ".+\\.(css|sass|less|styl|scss|png|jpg|ttf|woff|woff2)$":
       "jest-transform-stub"
   },

@@ -2,7 +2,7 @@
 import React from "react";
 
 // styles
-// import "./home_page.scss";
+import "./home_page.scss";
 
 /**
  * @desc
