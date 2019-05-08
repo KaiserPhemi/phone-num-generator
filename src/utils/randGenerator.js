@@ -26,7 +26,6 @@ const createNumberSet = setLength => {
       if (("" + phoneNum).length === 9) {
         phoneNumbers.add(phoneNum);
       } else {
-        console.log("missed", phoneNum);
         continue;
       }
     }
