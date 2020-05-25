@@ -48,7 +48,6 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "sass-loader": "^7.1.0",
-    "sodium": "^3.0.2",
     "source-map-loader": "^0.2.4",
     "style-loader": "^0.23.1",
     "webpack-md5-hash": "^0.0.6"
